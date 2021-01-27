@@ -42,5 +42,6 @@ QWidgetWrap::~QWidgetWrap()
     q_ = NULL;
 }
 
+
 // Qt functions
 QWIDGET_BASE_FUNCS(QWidgetWrap)

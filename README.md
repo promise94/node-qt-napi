@@ -1,4 +1,16 @@
 # node-qt-napi
 
-[![Build Status](https://travis-ci.org/kusti8/node-qt-napi.svg?branch=master)](https://travis-ci.org/kusti8/node-qt-napi)
-[![Build status](https://ci.appveyor.com/api/projects/status/ttn4p8rt748qo874?svg=true)](https://ci.appveyor.com/project/kusti8/node-qt-napi)
+    Node binding of qt
+
+## Requirements
+    you must have qt,node and npm installed in your system.
+
+## Contributing
+    
+    Add new compontents and don't forget to change binding.gyp if it is required.
+    npm install --build-from-source
+    make changes in test.js and run node test.js
+
+
+
+
