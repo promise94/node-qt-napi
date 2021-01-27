@@ -8,6 +8,7 @@
 #include "QtGui/qcombobox.hpp"
 #include "QtGui/qplaintextedit.hpp"
 #include "QtGui/qpushbutton.hpp"
+#include "QtGui/qmessagebox.hpp"
 #include "misc.hpp"
 
 Napi::Object Init(Napi::Env env, Napi::Object exports)
@@ -21,6 +22,7 @@ Napi::Object Init(Napi::Env env, Napi::Object exports)
     QComboBoxWrap::Init(env, exports);
     QPlainTextEditWrap::Init(env, exports);
     QPushButtonWrap::Init(env, exports);
+    QMessageBoxWrap::Init(env, exports);
     MiscInit(env, exports);
     return exports;
 }

@@ -13,6 +13,7 @@
                 "src/QtGui/qcombobox.cpp",
                 "src/QtGui/qplaintextedit.cpp",
                 "src/QtGui/qpushbutton.cpp",
+		"src/QtGui/qmessagebox.cpp",
                 "src/misc.cpp",
                 "src/utils/unwrapper.cpp",
             ],

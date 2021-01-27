@@ -2,6 +2,7 @@
 #define QWIDGETWRAP_H
 #include <QWidget>
 #include <QMouseEvent>
+#include <QString>
 #include <napi.h>
 #include <iostream>
 #include "qwidget_macros.hpp"
@@ -21,7 +22,6 @@ public:
 
 private:
   static Napi::FunctionReference constructor;
-
   QWIDGET_DEFS
 };
 
