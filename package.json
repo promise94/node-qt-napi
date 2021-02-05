@@ -1,12 +1,12 @@
 {
-  "name": "node-qt-napi",
+  "name": "@valence-native/node-qt",
   "version": "0.0.4",
-  "description": "",
+  "description": "Node binding of qt",
   "main": "./lib/qt.js",
   "binary": {
     "module_name": "qt",
     "module_path": "./bindings/napi-v{napi_build_version}",
-    "host": "https://github.com/kusti8/node-qt-napi/releases/download/",
+    "host": "https://github.com/valence-native/node-qt/releases/download/",
     "napi_versions": [
       2,
       3,
@@ -31,6 +31,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kusti8/node-qt-napi.git"
+    "url": "git+https://github.com/valence-native/node-qt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/valence-native/node-qt/issues"
+  },
+  "homepage": "https://github.com/valence-native/node-qt#readme",
+  "directories": {
+    "lib": "lib"
   }
 }
