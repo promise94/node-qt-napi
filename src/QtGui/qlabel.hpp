@@ -28,6 +28,7 @@ private:
   Napi::Value setPixmap(const Napi::CallbackInfo &info);
   Napi::Value setScaledContents(const Napi::CallbackInfo &info);
   Napi::Value setAlignment(const Napi::CallbackInfo &info);
+  Napi::Value setWordWrap(const Napi::CallbackInfo &info);
 
   // QWidget Funcs
   QWIDGET_DEFS
