@@ -13,7 +13,8 @@
                 "src/QtGui/qcombobox.cpp",
                 "src/QtGui/qplaintextedit.cpp",
                 "src/QtGui/qpushbutton.cpp",
-		"src/QtGui/qmessagebox.cpp",
+		        "src/QtGui/qmessagebox.cpp",
+		        "src/QtGui/qscrollarea.cpp",
                 "src/misc.cpp",
                 "src/utils/unwrapper.cpp",
             ],
@@ -67,6 +68,7 @@
                             "src/QtGui/qcombobox.cpp",
                             "src/QtGui/qplaintextedit.cpp",
                             "src/QtGui/qpushbutton.cpp",
+		                    "src/QtGui/qscrollarea.cpp",
                         ],
                         "cflags": ["<!@(pkg-config --cflags Qt5Core Qt5Gui Qt5Widgets)"],
                         "ldflags": [

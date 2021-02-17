@@ -9,6 +9,7 @@
 #include "QtGui/qplaintextedit.hpp"
 #include "QtGui/qpushbutton.hpp"
 #include "QtGui/qmessagebox.hpp"
+#include "QtGui/qscrollarea.hpp"
 #include "misc.hpp"
 
 Napi::Object Init(Napi::Env env, Napi::Object exports)
@@ -23,6 +24,7 @@ Napi::Object Init(Napi::Env env, Napi::Object exports)
     QPlainTextEditWrap::Init(env, exports);
     QPushButtonWrap::Init(env, exports);
     QMessageBoxWrap::Init(env, exports);
+    QScrollAreaWrap::Init(env, exports);
     MiscInit(env, exports);
     return exports;
 }
