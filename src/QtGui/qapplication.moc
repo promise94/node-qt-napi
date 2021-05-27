@@ -78,7 +78,7 @@ void SlotHandlerApplication::qt_static_metacall(QObject *_o, QMetaObject::Call _
 }
 
 QT_INIT_METAOBJECT const QMetaObject SlotHandlerApplication::staticMetaObject = { {
-    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
+    &QObject::staticMetaObject,
     qt_meta_stringdata_SlotHandlerApplication.data,
     qt_meta_data_SlotHandlerApplication,
     qt_static_metacall,

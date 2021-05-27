@@ -78,7 +78,7 @@ void SlotHandlerPushButton::qt_static_metacall(QObject *_o, QMetaObject::Call _c
 }
 
 QT_INIT_METAOBJECT const QMetaObject SlotHandlerPushButton::staticMetaObject = { {
-    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
+    &QObject::staticMetaObject,
     qt_meta_stringdata_SlotHandlerPushButton.data,
     qt_meta_data_SlotHandlerPushButton,
     qt_static_metacall,

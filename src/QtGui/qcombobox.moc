@@ -82,7 +82,7 @@ void SlotHandlerComboBox::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
 }
 
 QT_INIT_METAOBJECT const QMetaObject SlotHandlerComboBox::staticMetaObject = { {
-    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
+    &QObject::staticMetaObject,
     qt_meta_stringdata_SlotHandlerComboBox.data,
     qt_meta_data_SlotHandlerComboBox,
     qt_static_metacall,

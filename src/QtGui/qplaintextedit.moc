@@ -78,7 +78,7 @@ void SlotHandlerPlainTextEdit::qt_static_metacall(QObject *_o, QMetaObject::Call
 }
 
 QT_INIT_METAOBJECT const QMetaObject SlotHandlerPlainTextEdit::staticMetaObject = { {
-    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
+    &QObject::staticMetaObject,
     qt_meta_stringdata_SlotHandlerPlainTextEdit.data,
     qt_meta_data_SlotHandlerPlainTextEdit,
     qt_static_metacall,
