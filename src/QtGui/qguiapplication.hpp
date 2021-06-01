@@ -2,7 +2,7 @@
  * @Author: lixiaowei
  * @Date: 2021-05-27 13:20:37
  * @LastEditors: lixiaowei
- * @LastEditTime: 2021-06-01 12:12:02
+ * @LastEditTime: 2021-06-01 17:44:54
  * @Description: file content
  * @FilePath: /node-qt-napi/src/QtGui/qguiapplication.hpp
  */
@@ -16,8 +16,6 @@
 #include <QDebug>
 #include <QList>
 #include <QScreen>
-#include <QBuffer>
-#include <QByteArray>
 #include <QDir>
 #include <QDateTime>
 

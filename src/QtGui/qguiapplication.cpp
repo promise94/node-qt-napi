@@ -2,7 +2,7 @@
  * @Author: lixiaowei
  * @Date: 2021-05-27 13:20:49
  * @LastEditors: lixiaowei
- * @LastEditTime: 2021-06-01 15:09:53
+ * @LastEditTime: 2021-06-01 17:58:24
  * @Description: file content
  * @FilePath: /node-qt-napi/src/QtGui/qguiapplication.cpp
  */
@@ -71,9 +71,17 @@ Napi::Value QGuiApplicationWrap::screenshort(const Napi::CallbackInfo &info)
       filePath.mkpath(filePath.absolutePath());
     }
 
-    QString filePathName = filePath.filePath("full-" + QDateTime::currentDateTime().toString("yyyy-MM-ddhh-mm-ss-zzz") + ".jpg");
+    QString filePathName = filePath.filePath("full-" + QDateTime::currentDateTime().toString("yyyy-MM-ddhh-mm-ss-zzz") + ".png");
 
-    screen->grabWindow(0, rect.x(), rect.y(), rect.width(), rect.height()).save(filePathName, "jpg", 100);
+    bool saveState = screen->grabWindow(0, rect.x(), rect.y(), rect.width(), rect.height()).save(filePathName, "PNG");
+    if (!saveState)
+    {
+      obj.Set("status", Napi::Number::New(env, 0));
+    }
+    else
+    {
+      obj.Set("status", Napi::Number::New(env, 1));
+    }
 
     obj.Set("tempPath", Napi::Value::From(env, filePathName.toStdString()));
 
