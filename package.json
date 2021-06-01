@@ -1,5 +1,5 @@
 {
-  "name": "@valence-native/node-qt",
+  "name": "node-qt-napi",
   "version": "0.0.4",
   "description": "Node binding of qt",
   "main": "./lib/qt.js",
