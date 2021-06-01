@@ -15,6 +15,7 @@
                 "src/QtGui/qpushbutton.cpp",
 		        "src/QtGui/qmessagebox.cpp",
 		        "src/QtGui/qscrollarea.cpp",
+                "src/QtGui/qguiapplication.cpp",
                 "src/misc.cpp",
                 "src/utils/unwrapper.cpp",
             ],

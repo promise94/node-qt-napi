@@ -11,6 +11,7 @@
 #include "QtGui/qmessagebox.hpp"
 #include "QtGui/qscrollarea.hpp"
 #include "misc.hpp"
+#include "QtGui/qguiapplication.hpp"
 
 Napi::Object Init(Napi::Env env, Napi::Object exports)
 {
@@ -25,6 +26,7 @@ Napi::Object Init(Napi::Env env, Napi::Object exports)
     QPushButtonWrap::Init(env, exports);
     QMessageBoxWrap::Init(env, exports);
     QScrollAreaWrap::Init(env, exports);
+    QGuiApplicationWrap::Init(env, exports);
     MiscInit(env, exports);
     return exports;
 }

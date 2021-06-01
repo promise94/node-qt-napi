@@ -25,6 +25,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\"",
+    "build": "cross-env JOBS=max node-pre-gyp install --fallback-to-build --update-binary",
     "install": "cross-env JOBS=max node-pre-gyp install --fallback-to-build"
   },
   "author": "Gustav Hansen",
