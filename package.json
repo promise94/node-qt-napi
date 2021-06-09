@@ -1,6 +1,6 @@
 {
   "name": "node-qt-napi",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Node binding of qt",
   "main": "./lib/qt.js",
   "binary": {
@@ -16,6 +16,7 @@
     "package_name": "{module_name}-v{version}-{napi_build_version}-{platform}-{arch}.tar.gz"
   },
   "dependencies": {
+    "bindings": "^1.5.0",
     "cross-env": "^7.0.3",
     "node-addon-api": "^3.2.0",
     "node-pre-gyp": "^0.17.0"
@@ -24,7 +25,7 @@
     "node-pre-gyp-github": "^1.4.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\"",
+    "test": "node test.js",
     "build": "cross-env JOBS=max node-pre-gyp install --fallback-to-build --update-binary",
     "install": "cross-env JOBS=max node-pre-gyp install --fallback-to-build"
   },

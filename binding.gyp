@@ -101,7 +101,7 @@
             "copies": [
                 {
                     "files": ["<(PRODUCT_DIR)/<(module_name).node"],
-                    "destination": "<(module_path)"
+                    "destination": "./bindings"
                 }
             ],
             'conditions': [
@@ -116,13 +116,13 @@
                                 "deps/5.12.3/win32/msvcp140.dll",
                                 "deps/5.12.3/win32/vcruntime140.dll"
                             ],
-                            "destination": "<(module_path)"
+                            "destination": "./bindings"
                         },
                         {
                             "files": [
                                 "deps/5.12.3/win32/platforms/qwindows.dll"
                             ],
-                            "destination": "<(module_path)/platforms/"
+                            "destination": "./bindings/platforms/"
                         }
                     ]
                 }
@@ -134,7 +134,7 @@
                                 "deps/5.12.3/darwin/lib",
                                 "deps/5.12.3/darwin/platforms"
                             ],
-                            "destination": "<(module_path)"
+                            "destination": "./bindings"
                         }
                     ]
                 }]

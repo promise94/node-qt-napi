@@ -1,5 +1,7 @@
 {
     "files.associations": {
+        "*.html": "html",
+        "*.gyp": "python",
         "array": "cpp",
         "atomic": "cpp",
         "*.tcc": "cpp",
@@ -55,6 +57,7 @@
         "memory_resource": "cpp",
         "random": "cpp",
         "string": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "qapplication": "cpp"
     }
 }
